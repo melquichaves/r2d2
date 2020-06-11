@@ -928,6 +928,15 @@ client.on('message', (msg)=>{
             .setImage('attachment://sentir.png')
             msg.channel.send(embed);
         }
+
+        if (matches.bestMatch.target === "!sendguildmessages") {
+            var guildList = client.guilds.array();
+            try {
+                guildList.forEach(guild => guild.defaultChannel.send("bip bip booop bip bip! / Estou funcionando novamente! / I'm Working Again!"));
+            } catch (err) {
+                console.log("Could not send message to " + guild.name);
+            }
+        }
     }
 });
 
