@@ -931,6 +931,7 @@ client.on('message', (msg)=>{
 
         if (matches.bestMatch.target === "!sendguildmessages") {
             var guildList = client.guilds.array();
+            console.log(guildList);
             try {
                 guildList.forEach(guild => guild.defaultChannel.send("bip bip booop bip bip! / Estou funcionando novamente! / I'm Working Again!"));
             } catch (err) {
