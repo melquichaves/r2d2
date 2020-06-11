@@ -1,0 +1,19 @@
+{
+  "name": "swrpg",
+  "version": "1.0.0",
+  "description": "Bot para acesso rápido de informações de SWRPG",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "string-similarity": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "8.15.1"
+  }
+}
