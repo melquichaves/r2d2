@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const StringSimilarity = require('string-similarity');
 const token = process.env.BOT_TOKEN;
-const cheweyBotAnalyticsAPI = require("discord-bot-analytics");
-const customAnalytics = new cheweyBotAnalyticsAPI("f45201b7-f3cd-4114-971e-78872286b37a", discordBot);
 
 const client = new Discord.Client();
 
