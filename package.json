@@ -4,6 +4,7 @@
   "description": "Bot para acesso rápido de informações de SWRPG",
   "main": "index.js",
   "dependencies": {
+    "discord-bot-analytics": "^1.0.14",
     "discord.js": "^11.5.1",
     "string-similarity": "^3.0.0"
   },
