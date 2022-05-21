@@ -1,6 +1,6 @@
-import { MessageEmbed } from 'discord.js';
-import { findBestMatch } from 'string-similarity';
-import { Client, Intents } from 'discord.js';
+const Discord = require('discord.js');
+const StringSimilarity = require('string-similarity');
+const { Client, Intents } = require('discord.js');
 
 const token = process.env.BOT_TOKEN;
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
