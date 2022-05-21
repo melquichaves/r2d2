@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const StringSimilarity = require('string-similarity');
 const token = process.env.BOT_TOKEN;
-
-const client = new Discord.Client();
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 client.on('message', (msg)=>{
     if(/^!sw[^ ]*/.test(msg.content)){
